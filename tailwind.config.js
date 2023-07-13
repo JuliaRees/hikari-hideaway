@@ -8,8 +8,8 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Italiana', 'serif'],
+        canta: ['Cantarell', 'sans-serif'],
+        fjalla: ['Fjalla One', 'sans-serif'],
       },
       fontSize: {
         xs: ['0.75rem', '1.2'],
@@ -36,6 +36,7 @@ module.exports = {
         'gray-dark': '#273444',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
+        'red': '#ce451f',
       },
       extend: {
         lineHeight: {
@@ -56,6 +57,7 @@ module.exports = {
           'landscape': '3 / 2',
           'portrait-tall': '5/8',
           'portrait': '4/5',
+          'square': '1/1',
         },
         minHeight:{
           '100': '100vh',
