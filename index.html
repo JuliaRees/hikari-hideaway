@@ -95,13 +95,13 @@ seo:
 		<img src="/images/picture-10.png" alt="#" class="aspect-square object-cover w-full">
 		<img src="/images/picture-13.png" alt="#" class="aspect-square object-cover w-full">
 		<img src="/images/picture-18.png" alt="#" class="aspect-square object-cover w-full">
-		<img src="/images/picture-17.png" alt="#" class="aspect-square object-cover w-full">
-		<img src="/images/picture-12.png" alt="#" class="aspect-square object-cover w-full">
-		<img src="/images/picture-2.png" alt="#" class="aspect-square object-cover w-full">
+		<img src="/images/picture-17.png" alt="#" class="aspect-square object-cover w-full hidden md:block">
+		<img src="/images/picture-12.png" alt="#" class="aspect-square object-cover w-full hidden md:block">
+		<img src="/images/picture-2.png" alt="#" class="aspect-square object-cover w-full hidden md:block">
 	</div>
 
 	<div class="text-center p-4">
-		<a href="#" class="button"> Reserve Your Exquisite Experience Now </a>
+		<a href="#" class="button"> Book Now </a>
 	</div>
 
 </section>
@@ -144,6 +144,8 @@ seo:
 
 </section>
 
+<!----------Gallery----------->
+
 <section class="py-8 max-w-screen-2xl mx-auto grid grid-cols-6" id="gallery">
 
 	<div class="col-span-1 relative">
@@ -166,6 +168,8 @@ seo:
 
 </section>
 
+<!----------Images in Gallery----------->
+
 <section class="grid grid-cols-6 gap-4 items-center max-w-screen-2xl mx-auto mb-12">
 
 	<div class="col-span-1">
@@ -186,9 +190,11 @@ seo:
 
 </section>
 
+<!----------Contact----------->
+
 <section class="max-w-screen-xl mx-auto border-y-2 border-gray-800 px-8 py-16" id="contact">
 
-	<div class="grid grid-cols-5 gap-4">
+	<div class="md:grid md:grid-cols-5 md:gap-4">
 
 		<div class="col-span-full">
 			<h2 class="font-fjalla text-5xl uppercase tracking-wider"> Reserve Your Exquisite Experience Now </h2>
@@ -226,7 +232,9 @@ seo:
 
 </section>
 
-<footer class="max-w-screen-xl mx-auto grid grid-cols-5 py-16">
+<!----------Footer----------->
+
+<footer class="max-w-screen-xl mx-auto text-center md:text-left md:grid md:grid-cols-5 py-5 md:py-16">
 
 	<div class="col-span-1">
 		<h5 class="font-bold uppercase mb-4"> Hikari Hideaway </h5>
@@ -239,12 +247,12 @@ seo:
 	</div>
 
 	<div class="col-span-1">
-		<h5 class="font-bold uppercase mb-4"> Kyoto </h5>
+		<h5 class="font-bold uppercase mb-4 py-5 md:py-0"> Kyoto </h5>
 		<nav>
-			<a href="#"> Sightseeing </a>
-			<a href="#"> How To Get Around </a>
-			<a href="#"> Top 10 Restaurants </a>
-			<a href="#"> Guided Tour </a>
+			<a href="#" class="block"> Sightseeing </a>
+			<a href="#" class="block"> How To Get Around </a>
+			<a href="#" class="block"> Top 10 Restaurants </a>
+			<a href="#" class="block"> Guided Tour </a>
 		</nav>
 	</div>
 
@@ -259,7 +267,7 @@ seo:
 	</div>
 
 
-	<div class="center padded-t-5">
+	<div class="text-center pt-5">
 		<p class="subtle text-xs"> © 2023 All rights reserved. Designed and Built by Refined Island Creations </p>
 	</div>
 
