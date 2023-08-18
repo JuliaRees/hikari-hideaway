@@ -10,14 +10,13 @@ seo:
 ---
 
 <!----------Header----------->
-
-<header class="flex justify-center items-center p-5 md:p-8 max-w-screen-xl mx-auto">
+<header class="flex justify-between items-center p-5 md:p-8 max-w-screen-xl mx-auto">
 	<div class="grow">
 		<a href="/">
 			<h2 class="font-fjalla text-5xl uppercase tracking-wider pt-[3rem] md:pt-0 text-center md:text-left"> Hikari Hideaway </h2>
 		</a>
 	</div>
-	<div class="hidden md:block">
+	<div class="hidden md:flex">
 		<nav class="grow text-right">
 			<a href="#impressions" class="p-2"> Impressions </a>
 			<a href="#gallery" class="p-2"> Gallery </a>
@@ -28,7 +27,6 @@ seo:
 	<div class="text-right md:hidden">
 		<a class="hamburger-button z-20 relative"> &#9776; </a>
 	</div>
-
 </header>
 
 <div class="mobile-menu z-10 md:hidden">
@@ -41,13 +39,13 @@ seo:
 
 <!----------Discover----------->
 
-<section class="p-5 pt-0 md:p-8 max-w-screen-xl mx-auto">
+<section class="p-5 md:pb-0 pt-0 md:px-8 md:pt-8 max-w-screen-xl mx-auto">
 
-	<h1 class="py-4 font-canta uppercase text-[1.4rem] md:text-3xl font-bold text-center md:text-left"> Discover the Essence of Japanese Hospitality </h1>
+	<h1 class="py-4 md:px-5p font-canta uppercase text-[1.4rem] md:text-3xl font-bold text-center"> Discover the Essence of Japanese Hospitality </h1>
 
 	<div class="bg-cover bg-center min-h-[40vh] md:min-h-[50vh]" style="background-image:url(/images/banner.png)"></div>
 
-	<div class="md:grid md:grid-cols-6 md:gap-4 py-4 md:py-8">
+	<div class="md:grid md:grid-cols-6 md:gap-4 py-4 md:pt-8">
 
 		<div class="hidden md:block">
 			<p class="font-bold text-xl"> 
@@ -85,8 +83,7 @@ seo:
 <section class="pt-0 p-5 md:p-8 max-w-screen-xl mx-auto" id="impressions">
 
 	<div class="max-w-screen-md mx-auto text-center pb-4">
-		<h2 class="mb-6 font-fjalla text-5xl uppercase tracking-wider hidden md:block"> Hikari Hideaway </h2>
-		<h3 class="font-canta uppercase text-[1.4rem] md:text-3xl font-bold md:mb-6"> Immerse Yourself in the Visual Tapestry of Hikari Hideaway </h3>
+		<h3 class="font-canta uppercase text-[1.4rem] md:text-3xl font-bold md:pb-4"> Immerse Yourself in the Visual Tapestry of Hikari Hideaway </h3>
 		<p class="hidden md:block"> Our curated collection of photographs unveils the essence of Hikari Hideaway, inviting you to embark on a visual journey through moments of tranquility. Each snapshot encapsulates the harmonious blend of Japanese aesthetics and the captivating allure of our boutique retreat. Discover the artistry and allure that await you at Hikari Hideaway through the lens of our mesmerizing visual tapestry.</p>
 
 	</div>
@@ -111,7 +108,7 @@ seo:
 <section class="p-5 md:p-8 max-w-screen-xl mx-auto">
 
 	<div class="pb-5 md:pb-0">
-		<h2 class="mb-2 font-fjalla text-5xl uppercase tracking-wider text-center md:text-left">
+		<h2 class="mb-0 sm:mb-2 mt-[2rem] sm:mt-0 font-fjalla text-5xl uppercase tracking-wider text-center">
 			Crafting an Authentic <br> Japanese Experience
 		</h2>
 	</div>
@@ -132,7 +129,7 @@ seo:
 			</div>
 		</div>
 
-		<div class="hidden md:block bg-cover bg-center aspect-square object-cover w-full" style="background-image:url(/images/picture-1.png)">
+		<div class="hidden bg-cover bg-center aspect-square object-cover w-full md:flex items-center justify-center" style="background-image:url(/images/picture-1.png)">
 		</div>
 
 	</div>
@@ -142,7 +139,7 @@ seo:
 <!----------Quote----------->
 
 <section class="p-5 md:p-8 max-w-screen-xl mx-auto text-center">
-	<h2 class="text-border-y border-y-2 border-gray-800 p-5 m:p-12 leading-normal md:leading-snug font-fjalla text-2xl md:text-5xl uppercase tracking-wider">
+	<h2 class="text-border-y border-y-2 border-gray-800 mt-[2rem] sm:mt-0 p-5 m:p-12 leading-normal md:leading-snug font-fjalla text-2xl md:text-5xl uppercase tracking-wider">
 		Allow us to guide you through the intricacies of Japanese culture, from the art of the tea ceremony to the timeless elegance of wearing a yukata.
 	</h2>
 
@@ -176,48 +173,25 @@ seo:
 
 <!----------Images in Gallery Medium and above----------->
 
-<section class="hidden md:grid grid-cols-6 gap-4 items-center max-w-screen-2xl mx-auto mb-12">
+<section class="grid grid-cols-2 md:grid-cols-6 md:gap-4 items-center max-w-screen-2xl mx-auto mb-12">
 
 	<div class="col-span-1">
 		<img src="/images/picture-6.png" alt="" class="object-cover w-full p-5p md:p-0">
 	</div>
 
-	<div class="col-span-2">
-		<img src="/images/picture-21.png" alt="" class="object-cover w-full ">
+	<div class="col-span-1 md:col-span-2">
+		<img src="/images/picture-21.png" alt="" class="object-cover w-full p-5p md:p-0">
 	</div>
 
-	<div class="col-span-2">
+	<div class="col-span-1 md:col-span-2">
 		<img src="/images/picture-24.png" alt="" class="object-cover w-full p-5p md:p-0">
 	</div>
 
 	<div class="col-span-1">
-		<img src="/images/picture-4.png" alt="" class="object-cover w-full ">
+		<img src="/images/picture-4.png" alt="" class="object-cover w-full p-5p md:p-0">
 	</div>
 
 </section>
-
-
-<!----------Images in Gallery Tiny to Medium ----------->
-
-<div class="md:hidden slider-container">
-
-	<div class="slider-item">
-		<img src="/images/picture-6.png" alt="" class="object-cover w-full p-5p md:p-0">
-	</div>
-
-	<div class="slider-item">
-		<img src="/images/picture-21.png" alt="" class="object-cover w-full ">
-	</div>
-
-	<div class="slider-item">
-		<img src="/images/picture-24.png" alt="" class="object-cover w-full p-5p md:p-0">
-	</div>
-
-	<div class="slider-item">
-		<img src="/images/picture-4.png" alt="" class="object-cover w-full ">
-	</div>
-</div>
-
 
 <!----------Contact----------->
 
@@ -226,7 +200,7 @@ seo:
 	<div class="md:grid md:grid-cols-5 md:gap-4">
 
 		<div class="col-span-full text-center md:text-left pb-10 md:pb-0">
-			<h2 class="font-fjalla text-5xl uppercase tracking-wider"> Reserve Your Exquisite Experience Now </h2>
+			<h2 class="font-fjalla text-2xl sm:text-5xl uppercase tracking-wider"> Reserve Your Exquisite Experience Now </h2>
 		</div>
 
 		<div class="col-span-3 md:pr-12">
@@ -234,12 +208,12 @@ seo:
 			<form action="#">
 				<div class="mb-2 md:mb-4">
 					<label for="fname" class="block"> Name: </label>
-					<input id="fname" class="min-w-[50%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 md:mb-4" name="fname" placeholder="" type="text">
+					<input id="fname" class="min-w-[100%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 md:mb-4" name="fname" placeholder="" type="text">
 				</div>
 				
 				<div class="mb-2 md:mb-4">
 					<label for="email" class="block"> Email </label>
-					<input id="email" class="min-w-[50%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 md:mb-4" name="email" placeholder="" type="text">
+					<input id="email" class="min-w-[100%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 md:mb-4" name="email" placeholder="" type="text">
 				</div>
 				
 				<div class="mb-2 md:mb-4">
@@ -263,7 +237,7 @@ seo:
 
 <!----------Footer----------->
 
-<footer class="max-w-screen-xl mx-auto text-center md:text-left md:grid md:grid-cols-5 py-10 md:pt-16">
+<footer class="max-w-screen-xl mx-auto text-center md:text-left md:grid md:grid-cols-5 pt-10 md:pt-16">
 
 	<div class="col-span-1">
 		<h5 class="font-bold uppercase mb-4"> Hikari Hideaway </h5>
@@ -298,7 +272,7 @@ seo:
 	</div>
 
 
-	<div class="col-span-full text-center pt-10 md:pt-5">
+	<div class="col-span-full text-center pt-8 md:pt-5">
 		<p class="subtle text-xs"> © 2023 All rights reserved. <br> Designed and Built by Refined Island Creations. </p>
 	</div>
 
