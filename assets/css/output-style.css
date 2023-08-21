@@ -442,6 +442,18 @@ p {
 .right-1 {
   right: 0.25rem;
 }
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -474,6 +486,9 @@ p {
 .mb-0 {
   margin-bottom: 0px;
 }
+.mb-10p {
+  margin-bottom: 10%;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -495,14 +510,14 @@ p {
 .mt-\[2rem\] {
   margin-top: 2rem;
 }
-.mb-10p {
-  margin-bottom: 10%;
-}
 .block {
   display: block;
 }
 .flex {
   display: flex;
+}
+.table {
+  display: table;
 }
 .grid {
   display: grid;
@@ -512,6 +527,9 @@ p {
 }
 .aspect-square {
   aspect-ratio: 1/1;
+}
+.h-full {
+  height: 100%;
 }
 .min-h-\[40vh\] {
   min-height: 40vh;
@@ -678,6 +696,10 @@ p {
   font-size: 3rem;
   line-height: 1;
 }
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .text-\[1\.4rem\] {
   font-size: 1.4rem;
 }
@@ -688,14 +710,6 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1.2;
-}
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -855,17 +869,11 @@ p {
   .md\:mb-\[2rem\] {
     margin-bottom: 2rem;
   }
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-  .md\:mb-5p {
-    margin-bottom: 5%;
-  }
-  .md\:mb-10p {
-    margin-bottom: 10%;
-  }
   .md\:mb-\[6\%\] {
     margin-bottom: 6%;
+  }
+  .md\:ml-0 {
+    margin-left: 0px;
   }
   .md\:block {
     display: block;
