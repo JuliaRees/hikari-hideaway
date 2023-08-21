@@ -4,3 +4,25 @@ $(document).ready(function() {
       $(this).toggleClass('active');
   });
 });
+
+
+const counters = document.querySelectorAll('.counter');
+  const countingDuration = 8000; // Set your counting duration here (in milliseconds)
+
+  function update(counter, targetValue, startTime, duration) {
+    const currentTime = Date.now() - startTime;
+    if (currentTime < duration) {
+      const progress = currentTime / duration;
+      const newValue = Math.round(progress * targetValue);
+      counter.innerText = newValue;
+      requestAnimationFrame(() => update(counter, targetValue, startTime, duration));
+    } else {
+      counter.innerText = targetValue;
+    }
+  }
+
+  counters.forEach(counter => {
+    const targetValue = parseInt(counter.dataset.count, 10);
+    const startTime = Date.now();
+    update(counter, targetValue, startTime, countingDuration);
+  });

@@ -8,6 +8,11 @@
 
 @layer base {
 
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
     body {
         background-color: #eeebe5;
         color: #2b2b2d;
