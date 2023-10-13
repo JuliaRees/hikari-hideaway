@@ -156,4 +156,56 @@ body {
   }
 
 
- 
+ /* Social Hub */
+
+ .social-hub {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.social-hub > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background-color: #eeebe5;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+  transition: 2s;
+}
+
+.social-link {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  right: 0;
+}
+.social-link a {
+  width: 1rem;
+}
+
+.social-link svg {
+  max-width: 1rem;
+}
+
+.whatsapp {
+  z-index: -1;
+}
+.facebook {
+  z-index: -2;
+}
+.insta {
+  z-index: -3;
+}
+
+.active .whatsapp {
+  bottom: 3.2rem;
+}
+.active .facebook {
+  bottom: 6.4rem;
+}
+.active .insta {
+  bottom: 9.6rem;
+}

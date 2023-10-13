@@ -26,3 +26,16 @@ const counters = document.querySelectorAll('.counter');
     const startTime = Date.now();
     update(counter, targetValue, startTime, countingDuration);
   });
+
+
+
+
+  const socialHub = document.querySelector(".social-hub");
+  const socialButton = socialHub.querySelector(".social-button");
+  console.log(socialButton);
+  
+  function toggleSocialActive() {
+    socialHub.classList.toggle("active");
+  }
+  
+  socialButton.addEventListener("click", toggleSocialActive);

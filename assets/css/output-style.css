@@ -827,20 +827,69 @@ body {
   }
 
 
-  .focus\:outline-none:focus {
+ /* Social Hub */
+
+ .social-hub {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.social-hub > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background-color: #eeebe5;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+  transition: 2s;
+}
+
+.social-link {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  right: 0;
+}
+.social-link a {
+  width: 1rem;
+}
+
+.social-link svg {
+  max-width: 1rem;
+}
+
+.whatsapp {
+  z-index: -1;
+}
+.facebook {
+  z-index: -2;
+}
+.insta {
+  z-index: -3;
+}
+
+.active .whatsapp {
+  bottom: 3.2rem;
+}
+.active .facebook {
+  bottom: 6.4rem;
+}
+.active .insta {
+  bottom: 9.6rem;
+}
+.focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
-
-  .focus\:ring-2:focus {
+.focus\:ring-2:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-
-
-  @media (min-width: 640px) {
+@media (min-width: 640px) {
   .sm\:right-4 {
     right: 1rem;
   }
@@ -858,9 +907,7 @@ body {
     line-height: 1;
   }
 }
-
-
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -983,9 +1030,7 @@ body {
     line-height: .95;
   }
 }
-
-
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .lg\:block {
     display: block;
   }
@@ -993,6 +1038,3 @@ body {
     display: none;
   }
 }
-
-
- 
