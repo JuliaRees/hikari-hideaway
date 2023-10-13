@@ -179,7 +179,6 @@ body {
 .social-link {
   position: absolute;
   bottom: 0;
-  z-index: -1;
   right: 0;
 }
 .social-link a {
@@ -201,11 +200,11 @@ body {
 }
 
 .active .whatsapp {
-  bottom: 3.2rem;
+  transform: translateY(-3.2rem);
 }
 .active .facebook {
-  bottom: 6.4rem;
+  transform: translateY(-6.4rem);
 }
 .active .insta {
-  bottom: 9.6rem;
+  transform: translateY(-9.6rem);
 }
