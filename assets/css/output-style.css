@@ -1049,4 +1049,7 @@ body {
   .lg\:hidden {
     display: none;
   }
+  .lg\:pb-\[0\.4rem\] {
+    padding-bottom: 0.4rem;
+  }
 }
