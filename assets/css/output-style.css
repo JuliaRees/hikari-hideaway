@@ -445,6 +445,9 @@ p {
 .right-1 {
   right: 0.25rem;
 }
+.top-\[-0\.2rem\] {
+  top: -0.2rem;
+}
 .z-10 {
   z-index: 10;
 }
