@@ -858,6 +858,7 @@ body {
 
 .social-button {
   font-size: 2rem;
+  
 }
 
 .social-link {
@@ -1048,8 +1049,5 @@ body {
   }
   .lg\:hidden {
     display: none;
-  }
-  .lg\:pb-\[0\.4rem\] {
-    padding-bottom: 0.4rem;
   }
 }
