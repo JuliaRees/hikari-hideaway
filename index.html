@@ -223,7 +223,7 @@ seo:
 
 		<div class="col-span-3 md:pr-12">
 
-			<form action="#">
+			<form name="contact" method="POST" data-netlify="true">
 				<div class="mb-2">
 					<label for="fname" class="block"> Name: </label>
 					<input id="fname" class="min-w-[100%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" name="fname" placeholder="" type="text">
@@ -238,6 +238,8 @@ seo:
 					<label for="message" class="block"> Message </label>
 					<textarea class="min-w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="message" placeholder="Please state your preferred dates and any other questions you may have." rows="10"></textarea>
 				</div>
+
+				<input type="hidden" name="form-name" value="contact">
 
 				<div class="text-center md:text-right">
 					<input class="submit-button" type="submit" value="Submit">
