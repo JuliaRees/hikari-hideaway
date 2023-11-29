@@ -41,23 +41,25 @@ const counters = document.querySelectorAll('.counter');
   socialButton.addEventListener("click", toggleSocialActive);
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form[name='contact']");
+ 
 
-    form.addEventListener("submit", function (event) {
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const handleFormSubmit = (event) => {
         event.preventDefault();
 
-        const formData = new FormData(form);
+        const myForm = event.target;
+        const formData = new FormData(myForm);
 
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
-            .then(() => {
-                console.log("Form successfully submitted");
-                // Optionally, you can redirect the user to a thank you page or show a success message.
-            })
-            .catch((error) => alert("Error submitting form. Please try again later."));
-    });
+            .then(() => console.log("Form successfully submitted"))
+            .catch((error) => alert(error));
+    };
+
+    document.querySelector("form").addEventListener("submit", handleFormSubmit);
 });
