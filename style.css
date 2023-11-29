@@ -175,6 +175,7 @@ body {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  cursor: pointer;
 }
 
 .social-hub > div {
