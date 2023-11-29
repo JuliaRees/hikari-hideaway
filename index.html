@@ -223,28 +223,27 @@ seo:
 
 		<div class="col-span-3 md:pr-12">
 
-			<form name="contact" method="POST" data-netlify="true">
+			<form name="contact" method="POST" data-netlify="true" class="mb-4">
 				<div class="mb-2">
 					<label for="fname" class="block"> Name: </label>
-					<input id="fname" class="min-w-[100%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" name="fname" placeholder="" type="text">
+					<input id="fname" name="fname" type="text" placeholder="Your Name" class="min-w-[100%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" />
 				</div>
-				
+			
 				<div class="mb-2">
-					<label for="email" class="block"> Email </label>
-					<input id="email" class="min-w-[100%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" name="email" placeholder="" type="text">
+					<label for="email" class="block"> Email: </label>
+					<input id="email" name="email" type="email" placeholder="Your Email" class="min-w-[100%] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" />
 				</div>
-				
-				<div class="mb-2 md:mb-4">
-					<label for="message" class="block"> Message </label>
-					<textarea class="min-w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="message" placeholder="Please state your preferred dates and any other questions you may have." rows="10"></textarea>
+			
+				<div class="mb-4">
+					<label for="message" class="block"> Message: </label>
+					<textarea id="message" name="message" placeholder="Your Message" rows="6" class="min-w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
 				</div>
-
+			
 				<input type="hidden" name="form-name" value="contact">
-
-				<div class="text-center md:text-right">
-					<input class="submit-button" type="submit" value="Submit">
+			
+				<div class="text-center">
+					<button type="submit" class="submit-button">Submit</button>
 				</div>
-
 			</form>
 
 		</div>
