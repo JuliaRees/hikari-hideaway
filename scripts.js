@@ -57,5 +57,5 @@ const counters = document.querySelectorAll('.counter');
             .catch((error) => alert(error));
     };
 
-    document.querySelector("form").addEventListener("submit", handleSubmit);
+    document.querySelector("form[name='contact']").addEventListener("submit", handleSubmit);
 });
