@@ -57,9 +57,9 @@ const counters = document.querySelectorAll('.counter');
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
-            .then(() => console.log("Form successfully submitted"))
+            .then(() => console.log("Netlify form successfully submitted"))
             .catch((error) => alert(error));
     };
 
-    document.querySelector("form").addEventListener("submit", handleFormSubmit);
+    document.querySelector(".netlify").addEventListener("submit", handleFormSubmit);
 });
